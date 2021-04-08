@@ -14,6 +14,7 @@ const AuthRoute=require('./routes/AuthRoute')
 
 var app=express();
 
+//use body parser
 app.use(express.json());
 
 connectDb();
@@ -28,6 +29,7 @@ app.use('/api/v1/categories',CategoriesRoute);
 app.use('/api/v1/products',ProductsRoute);
 app.use('/api/v1/auth',AuthRoute);
 
+//use error middleware
 app.use(errorHandler);
 
 app.listen(port,console.log(`Server Running on PORT : ${port} `.yellow));
