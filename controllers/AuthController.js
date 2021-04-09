@@ -35,10 +35,11 @@ exports.loginUser = asyncHandler(async (req, res, next) => {
 	}
 
 	//Check the user (We include password because of select:false)
-	const currentUser = User.findOne({ email }).select("+password");
+	const currentUser = await User.findOne({ email },'+password');
 	if (!currentUser) {
 		next(new ErrorResponse("Invalid credentials", 401));
 	}
+	console.log(currentUser instanceof(User));
 
 	//Check if password matches
 	const result = await currentUser.matchPassword(password);
