@@ -1,4 +1,5 @@
 const express=require('express');
+const cookieParser=require('cookie-parser');
 const dotenv=require('dotenv');
 const colors=require('colors');
 const morgan=require('morgan');
@@ -16,6 +17,9 @@ var app=express();
 
 //use body parser
 app.use(express.json());
+
+//use cookie parser
+app.use(cookieParser());
 
 connectDb();
 
