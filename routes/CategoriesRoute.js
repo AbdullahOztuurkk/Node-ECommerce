@@ -6,14 +6,15 @@ const {
   updateCategory,
   deleteCategory,
 } = require("../controllers/CategoryController");
+const {protect} = require('../middleware/auth');
 
 const Router = express.Router();
 
-Router.route("/").get(GetCategories).post(CreateCategory);
+Router.route("/").get(GetCategories).post(protect,CreateCategory);
 
 Router.route("/:id")
   .get(GetCategory)
-  .put(updateCategory)
-  .delete(deleteCategory);
+  .put(protect,updateCategory)
+  .delete(protect,deleteCategory);
 
 module.exports = Router;
