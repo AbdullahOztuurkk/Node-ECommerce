@@ -3,6 +3,7 @@ const asyncHandler = require("./async");
 const User = require("../models/User");
 const ErrorResponse = require("../utils/ErrorResponse");
 
+//Check private routes
 exports.protect = asyncHandler(async (req, res, next) => {
 	let token;
 
@@ -28,3 +29,13 @@ exports.protect = asyncHandler(async (req, res, next) => {
 		next(new ErrorResponse("Not Authorized!", 401));
 	}
 });
+
+//Grant access by roles to private routes
+exports.authorize=(...roles)=>{
+	return (req,res,next)=>{
+		if(!roles.includes(req.user.role)){
+			next(new ErrorResponse(`${req.user.role} is not authorized to this route.`,403));
+		}
+		next();
+	}
+};
