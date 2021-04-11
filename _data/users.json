@@ -1,0 +1,93 @@
+[
+	{
+		"name": "Rickard",
+		"email": "Rickard@gmail.com",
+		"role": "user",
+		"password": "123456",
+		"createdAt": "2021-04-08 01:55:04"
+	},
+	{
+		"name": "Veradis",
+		"email": "Veradis@gmail.com",
+		"role": "user",
+		"password": "123456",
+		"createdAt": "2020-08-18 12:54:00"
+	},
+	{
+		"name": "Ardath",
+		"email": "Ardath@gmail.com",
+		"role": "user",
+		"password": "123456",
+		"createdAt": "2021-03-18 06:26:13"
+	},
+	{
+		"name": "Oran",
+		"email": "Oran@gmail.com",
+		"role": "user",
+		"password": "123456",
+		"createdAt": "2020-04-24 15:17:55"
+	},
+	{
+		"name": "Erroll",
+		"email": "Erroll@gmail.com",
+		"role": "user",
+		"password": "123456",
+		"createdAt": "2021-01-02 21:33:30"
+	},
+	{
+		"name": "Rufe",
+		"email": "Rufe@gmail.com",
+		"role": "publisher",
+		"password": "123456",
+		"createdAt": "2020-11-07 01:27:36"
+	},
+	{
+		"name": "Tybalt",
+		"email": "Tybalt@gmail.com",
+		"role": "publisher",
+		"password": "123456",
+		"createdAt": "2021-02-27 15:03:18"
+	},
+	{
+		"name": "Clerc",
+		"email": "Clerc@gmail.com",
+		"role": "publisher",
+		"password": "123456",
+		"createdAt": "2020-11-04 18:17:05"
+	},
+	{
+		"name": "Luther",
+		"email": "Luther@gmail.com",
+		"role": "publisher",
+		"password": "123456",
+		"createdAt": "2021-04-03 08:41:56"
+	},
+	{
+		"name": "Caprice",
+		"email": "Caprice@gmail.com",
+		"role": "user",
+		"password": "123456",
+		"createdAt": "2020-06-23 16:16:37"
+	},
+	{
+		"name": "Ogden",
+		"email": "Ogden@gmail.com",
+		"role": "publisher",
+		"password": "123456",
+		"createdAt": "2020-05-16 07:05:24"
+	},
+	{
+		"name": "Rosemonde",
+		"email": "Rosemonde@gmail.com",
+		"role": "user",
+		"password": "123456",
+		"createdAt": "2020-07-22 10:53:17"
+	},
+	{
+		"name": "Janenna",
+		"email": "Janenna@gmail.com",
+		"role": "user",
+		"password": "123456",
+		"createdAt": "2021-02-13 18:15:09"
+	}
+]
